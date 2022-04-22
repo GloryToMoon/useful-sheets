@@ -1,0 +1,3 @@
+#!/bin/bash
+cmd="$@"
+sh -c "sleep 1; echo [password]" | script -qc "su -c '$cmd' - [user]" | tail -n +2
