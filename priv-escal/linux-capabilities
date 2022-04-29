@@ -1,0 +1,2 @@
+## search files with capabilities
+getcap -r / 2>/dev/null
